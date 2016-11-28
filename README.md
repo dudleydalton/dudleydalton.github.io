@@ -7,7 +7,7 @@ My Github user page is at:
 https://github.com/dudleydalton/
 
 My Github Pages repo can be found at:  
-https://github.com/dantnguyen/dudleydalton.github.io/
+https://github.com/dudleydalton/dudleydalton.github.io/
 
 You can see my customized homepage at:
 
