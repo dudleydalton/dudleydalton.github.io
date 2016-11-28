@@ -1,0 +1,22 @@
+﻿body {
+}
+h1{
+    color: darkgray;
+}
+
+li{
+    display: inline;
+    background-color: ghostwhite;
+}
+
+li a:hover {
+    background-color: blanchedalmond;
+}
+
+.Sidebar {
+    float: left;
+    background: red;
+    left: 0; 
+    right: 0;
+    width: 178px;
+}

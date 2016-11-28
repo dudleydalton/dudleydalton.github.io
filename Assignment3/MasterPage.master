@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Online Shop</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div ="PageWrapper">
+        <header>
+            <img src="Images/csu-logo-print.png" /></header>
+        <h1>Welcome To The CSU Store</h1>
+        <nav>
+            <ul>
+                <li><a href="ContactUs.aspx">Contact</a></li>
+                <li><a href="ProductDisplay.aspx">Products</a></li>
+                <li><a href="Login.aspx">Login</a></li>
+            </ul>
+        </nav>
+        <section id="MainContent">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:OnlineStoreConnectionString %>' SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+            </asp:ContentPlaceHolder>
+        </section>
+        <br />
+        <aside id="Sidebar"><img src="Images/images.png"/></aside>
+        <footer>We at CSU strive for customer happiness!</footer>
+    </div>
+    </form>
+</body>
+</html>
