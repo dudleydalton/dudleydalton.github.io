@@ -1,7 +1,9 @@
 ﻿body {
+    color: red;
 }
 h1{
-    color: darkgray;
+    color: red;
+    text-align: center;
 }
 
 li{
@@ -19,4 +21,15 @@ li a:hover {
     left: 0; 
     right: 0;
     width: 178px;
+}
+header{
+    text-align: center;
+    width: 100%;
+}
+image{
+    text-align: center;
+    width: 100%;
+}
+footer{
+    text-align: center;
 }
